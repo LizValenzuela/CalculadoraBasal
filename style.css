@@ -31,11 +31,20 @@ body{
     color: #f6f5f7;
 }
 .contenido{
-    position: relative;
+    position:relative;
     top:50%;
     transform:translateY(-50%);
     overflow: hidden;
     padding: 40px;
+}
+.contenido2{
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+    text-align:justify;
+    
 }
 
 input{
@@ -75,4 +84,8 @@ button:active{
     font-size:25px;
     margin-bottom: 5px;
     display:none;
+}
+
+.botonCalcular{
+    margin-top: 10px;
 }

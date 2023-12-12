@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="./script.js" defer></script>
         <title>Calculadora Basal</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
@@ -12,19 +13,25 @@
                     <p class="item">Completa todos los datos</p>
                     <input class="item" id="peso" type="number" placeholder="Peso en kg"/>
                     <p class="item" id="error">* Debe completar todos los datos</p>
-                    <button class="item" id="calcular">Calcular</button>
+                    <div  class="botonCalcular"> <button class="item" id="calcular">Calcular</button></div>
+                    <p class="item resultado" id="volumenDiario">1704cc</p>
                     <p class="item resultado" id="flu">71cc/h</p>
                     <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
                 </div>
             </div>
             <div id="detalle">
-                <div class="contenido">
+                <div class="contenido2">
                     <h1>¿Cómo se calcula?</h1>
+                    <h4>Volumen diario para pacientes con peso menor o igual a 30 kg:</h4>
                     <ul>
                         <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
                         <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                     </ul>
+                    <p>El resultado obtenido se divide por 24 horas para determinar el flujo horario.</p>
+                    <h4>Para pacientes con peso mayor a 30 kg se emplea la fórmula:</h4>
+                    <p>((peso * 4) + 7)/(peso + 90)</p>
+                    <p>Luego se multiplica por 1500 o 2000 para determinar el volumen diario</p>
                 </div>
             </div>
         </div>
